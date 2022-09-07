@@ -1,0 +1,25 @@
+### get all owners
+GET http://localhost:5000/api/owner/
+
+
+### search owner by email
+
+GET http://localhost:5000/api/owner/search
+Content-Type: application/json
+
+{
+  "email": "fernandomail.com"
+}
+
+### create an owner
+
+POST http://localhost:5000/api/owner/add-owner
+Content-Type: application/json
+
+{
+  "name": "Armando Ruiz", 
+  "email": "armando_ruiizz@hotmail.com", 
+  "password": "12345", 
+  "phone": "8341254526", 
+  "address": "Ciudad Victoria, Tams"
+}
